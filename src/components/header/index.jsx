@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import { Container, Content } from "./style"
 
 import {AiOutlineMenu} from "react-icons/ai"
@@ -6,38 +6,27 @@ import{FaLinkedin} from "react-icons/fa"
 import {FaInstagramSquare} from "react-icons/fa"
 import {MdEmail} from "react-icons/md"
 import {AiOutlineCloseCircle} from "react-icons/ai"
+import { ButtonContext } from '../../providers/buttonProvider'
 
 
 export const Header = () => {
-    const [modal, setModal] = useState('modal')
+   const {modal, openModal, closeModal} = useContext(ButtonContext)
 
-    function openModal() {
-        setModal('modalOpen')
-        console.log('abriu')
-        console.log(modal)
-    }
-
-    function closeModal() {
-        setModal('modal')
-        console.log('fechou')
-        console.log(modal)
-    }
-
-    
+   
 
     return(
         <>
-            <Container>
-                <h1>Douglas Braz</h1>
-                <AiOutlineMenu color="rgb(255, 255, 255)" size={25} onClick={openModal}/>
+            <Container >
+                <h1 >Douglas Braz</h1>
+                <AiOutlineMenu cursor="pointer" color="rgb(255, 255, 255)" size={25} onClick={openModal}/>
                 <Content>
                     <div className={modal}>
                         
 
                         <ul className='menu'>
-                            <li className="linkeIcon"><FaLinkedin/></li>
-                            <li className="instaIcon"><FaInstagramSquare/></li>
-                            <li className="emailIcon"><MdEmail/></li>
+                            <li className="linkeIcon"><FaLinkedin cursor="pointer"/></li>
+                            <li className="instaIcon"><FaInstagramSquare cursor="pointer"/></li>
+                            <li className="emailIcon"><MdEmail cursor="pointer"/></li>
 
                         </ul>
                         <AiOutlineCloseCircle 
@@ -45,6 +34,7 @@ export const Header = () => {
                             size={25} 
                             className='close' 
                             onClick={closeModal}
+                            cursor="pointer"
                         />
                        
                     </div>

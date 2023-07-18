@@ -1,13 +1,17 @@
 import { Container, Content } from "./style"
+import { useContext } from "react"
+import { ButtonContext } from "../../providers/buttonProvider"
 
 import my_services1 from "../../assets/images/my_services1.jpg"
 import my_services2 from "../../assets/images/my_services2.jpg"
 import my_services3 from "../../assets/images/my_services3.jpg"
 
 export const MyServices = () => {
+    const {closeModal} = useContext(ButtonContext)
+
     return(
         <>
-            <Container>
+            <Container onClick={closeModal}>
                 <h1 className="title">Meus serviços</h1>
 
                 <Content>

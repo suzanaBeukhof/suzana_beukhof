@@ -1,11 +1,16 @@
+import { useContext } from "react"
+
 import { Container } from "./style"
 import about from "../../assets/images/about.jpg"
 
+import { ButtonContext } from "../../providers/buttonProvider"
+
 
 export const AboutMe = () => {
+    const {closeModal} = useContext(ButtonContext)
     return(
         <>
-            <Container>
+            <Container onClick={closeModal}>
                 <div>
                     <h1 className="tittle">Sobre mim</h1>
                     <p className="firstP">Sou Douglas Braz desenvolvedor web front-end. 

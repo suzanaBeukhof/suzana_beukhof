@@ -15,6 +15,8 @@ export const Container = styled.div`
         margin-top: 30px;
         padding-bottom: 5px;
         border-bottom: 2px solid rgb(255, 255, 255);
+
+        cursor: pointer;
     }
 
     .menu{
@@ -22,7 +24,7 @@ export const Container = styled.div`
         margin-top: 30px;
 
         li{
-            
+            cursor: pointer;
             margin-right: 15px;
         }
     }
