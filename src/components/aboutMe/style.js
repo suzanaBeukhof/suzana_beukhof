@@ -5,7 +5,7 @@ export const Container = styled.div`
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-   height: 85vh;
+   height: 90vh;
    background-color: rgb(51, 51, 51);
     min-height: 240px;
     padding: 30px;
@@ -38,11 +38,5 @@ export const Container = styled.div`
 
 `;
 
-export const Content = styled.div`
-    
-    
-   
 
-   
-`;
 
