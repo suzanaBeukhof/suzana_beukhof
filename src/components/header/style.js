@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(17, 17, 17);
+    background-color: rgb(51, 51, 51);
     height: 5rem;
 
     h1{
@@ -20,7 +20,7 @@ export const Content = styled.div`
     
     
     z-index: 5;
-    background: rgb(17, 17, 17);
+    background-color: rgb(51, 51, 51);
     
     
     width: 32%;

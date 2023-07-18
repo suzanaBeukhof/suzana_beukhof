@@ -16,7 +16,7 @@ export const Container = styled.div`
     
 
 
-    background-color: rgb(20, 142, 224); min-height: 240px;
+    background-color: rgba(244, 67, 54, 0.5);
 
     
 
@@ -26,7 +26,7 @@ export const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     
     .box1, .box2, .box3{

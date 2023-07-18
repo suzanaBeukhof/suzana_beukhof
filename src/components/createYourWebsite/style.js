@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import background from "../../assets/images/background.jpg"
 
 export const Container = styled.div`
-    height: vh;
+    height: 55vh;
     border: 1px solid red;
 
     .bg{

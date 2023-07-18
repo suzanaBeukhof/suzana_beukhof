@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Container, Content } from "./style"
 
 import {AiOutlineMenu} from "react-icons/ai"
-import{FaFacebook} from "react-icons/fa"
+import{FaLinkedin} from "react-icons/fa"
 import {FaInstagramSquare} from "react-icons/fa"
-import {FaTwitterSquare} from "react-icons/fa"
+import {MdEmail} from "react-icons/md"
 import {AiOutlineCloseCircle} from "react-icons/ai"
 
 
@@ -35,9 +35,9 @@ export const Header = () => {
                         
 
                         <ul className='menu'>
-                            <li className="fbIcon"><FaFacebook/></li>
+                            <li className="linkeIcon"><FaLinkedin/></li>
                             <li className="instaIcon"><FaInstagramSquare/></li>
-                            <li className="twIcon"><FaTwitterSquare/></li>
+                            <li className="emailIcon"><MdEmail/></li>
 
                         </ul>
                         <AiOutlineCloseCircle 
