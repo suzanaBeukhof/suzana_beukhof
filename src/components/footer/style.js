@@ -23,6 +23,10 @@ export const Container = styled.div`
         display: flex;
         margin-top: 30px;
 
+        a{
+          color: rgb(255, 255, 255);
+        }
+
         li{
             cursor: pointer;
             margin-right: 15px;

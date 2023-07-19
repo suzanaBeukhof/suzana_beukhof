@@ -59,6 +59,10 @@ export const Content = styled.div`
         font-family: 'Arvo', serif;       
         }
 
+        a{
+          color: rgb(255, 255, 255);
+        }
+
         li{
             margin-top: 10px;
             margin-bottom: 10px;
@@ -82,6 +86,10 @@ export const Content = styled.div`
             font-size: 2rem;
             color: rgb(255, 255, 255);
             font-family: 'Arvo', serif;       
+            }
+
+            a{
+              color: rgb(255, 255, 255);
             }
 
             li{

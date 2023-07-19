@@ -24,10 +24,14 @@ export const Container = styled.div`
         margin-left: 30px;
     }
 
+    .boxForm{
+        width: 100%;
+    }
+
     .form{
         width: 100%;
         margin-top: 30px;
-        height: 63rem;
+        height: 55rem;
         border: none;
     }
 
