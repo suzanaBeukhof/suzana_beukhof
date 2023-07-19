@@ -28,6 +28,20 @@ export const Container = styled.div`
             margin-right: 15px;
         }
     }
+
+    @media (min-width: 780px){
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .homeP{
+            margin-top: 0;
+        }
+
+        .menu{
+            margin-top: 0;
+        }
+    }
 `;
 
 

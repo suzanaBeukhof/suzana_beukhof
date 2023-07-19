@@ -13,10 +13,15 @@ export const Container = styled.div`
         
     }
 
-    
-
-
     background-color: rgba(244, 67, 54, 0.5);
+
+    @media (min-width: 780px){
+        height: 100vh;
+        .title{
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    }
 
     
 
@@ -77,6 +82,17 @@ export const Content = styled.div`
         }
 
         
+    }
+
+    @media (min-width: 780px){
+        height: 70%;
+        .box1, .box2, .box3{
+            width: 25%;
+            height: 100%;
+            margin: 30px 30px 0 30px;
+
+            
+        }
     }
    
 

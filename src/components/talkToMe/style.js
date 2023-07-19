@@ -29,9 +29,32 @@ export const Container = styled.div`
         margin-top: 30px;
         height: 63rem;
         border: none;
-        
-        
-   }
+    }
+
+    @media (min-width: 780px){
+        flex-direction: row;
+        align-items: center;
+
+        .boxTxt{
+            width: 50rem;
+        }
+
+        .boxForm{
+            width: 53rem;
+        }
+
+        .form{
+            height: 50rem;
+        }
+
+        .tittle{
+            font-size: 4rem;
+        }
+
+        .paragraph{
+            font-size: 2rem;
+        }
+    }
 
     
 

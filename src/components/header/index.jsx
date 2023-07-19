@@ -18,7 +18,7 @@ export const Header = () => {
         <>
             <Container >
                 <h1 >Douglas Braz</h1>
-                <AiOutlineMenu cursor="pointer" color="rgb(255, 255, 255)" size={25} onClick={openModal}/>
+                <AiOutlineMenu className='menuIcon' cursor="pointer" color="rgb(255, 255, 255)" size={25} onClick={openModal}/>
                 <Content>
                     <div className={modal}>
                         

@@ -24,7 +24,7 @@ export const AboutMe = () => {
                         que superam as expectativas de meus clientes.
                     </p>
                 </div>
-            <img src={about}/>
+            <img src={about} alt="pessoa apontando para a tela do computador"/>
 
             </Container>
         </>

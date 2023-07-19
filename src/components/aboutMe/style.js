@@ -36,6 +36,38 @@ export const Container = styled.div`
        object-position: center center;
     }
 
+    @media (min-width: 780px){
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 60vh;
+
+
+        div{
+            height: 39rem;
+            width: 55rem; 
+            padding-left: 30px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .tittle{
+                font-size: 2.5rem;
+            }
+
+            .firstP, .secondP{
+                font-size: 1.3rem;
+            }
+        }
+
+        img{
+            width: 45rem;
+            height: 27rem;           
+            margin-top: 0;
+        }
+    }
+
 `;
 
 

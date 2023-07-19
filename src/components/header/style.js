@@ -14,6 +14,12 @@ export const Container = styled.div`
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    @media (min-width: 780px){
+        .menuIcon{
+            display: none;
+        }
+    }
 `;
 
 export const Content = styled.div`
@@ -62,6 +68,35 @@ export const Content = styled.div`
             align-self: flex-start;
         }
 
+    }
+
+    @media (min-width: 780px){
+        margin-top: 0;
+        .modal{
+            display: flex; 
+            margin-left: 0;
+           
+            
+
+            p, li{
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            font-family: 'Arvo', serif;       
+            }
+
+            li{
+               margin-right: 15px;
+            }
+
+            .close{            
+               display: none;
+            }
+
+            .menu{
+                display: flex;
+            }
+
+        }
     }
 
    

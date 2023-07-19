@@ -64,6 +64,24 @@ export const Content = styled.div`
         cursor: pointer;
     }
 
+    @media (min-width: 780px){
+        h1{
+            font-size: 4.5rem;
+            margin-top: 60px;
+        }
+
+        p{
+            font-size: 1.5rem;
+            width: 48rem;
+            margin-top: 30px;
+        }
+
+        button{
+            width: 12rem;
+            margin-top: 70px;
+        }
+    }
+
 
 
    
