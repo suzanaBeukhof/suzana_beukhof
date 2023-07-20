@@ -25,14 +25,14 @@ export const MyServices = () => {
                     <div className="box2">
                     <img src={my_services2}/>
                         <p className="tittleParagraph">Migração de Site</p>
-                        <p className="paragraph">Transferimos seu site para uma plataforma mais avançada, 
+                        <p className="paragraph">Transfiro seu site para uma plataforma mais avançada, 
                         mantendo a integridade do conteúdo e dos dados.</p>
                         <button>Mais informações</button>
                     </div>
                     <div className="box3">
                     <img src={my_services3}/>
                         <p className="tittleParagraph">SEO para Sites</p>
-                        <p className="paragraph">Otimizamos seu site para que ele apareça 
+                        <p className="paragraph">Otimizo seu site para que ele apareça 
                         nos primeiros resultados das pesquisas dos mecanismos de busca.</p>
                         <button>Mais informações</button>
                     </div>
