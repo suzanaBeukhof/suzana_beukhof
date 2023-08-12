@@ -15,6 +15,16 @@ export const Container = styled.div`
 
     background-color: rgba(244, 67, 54, 0.5);
 
+    .modal{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+
+        border: 1px solid red;
+        background: blue;
+        
+    }
+
     @media (min-width: 780px){
         height: 100vh;
         .title{

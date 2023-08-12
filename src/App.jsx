@@ -1,6 +1,6 @@
 
 import { AboutMe } from "./components/aboutMe"
-import { CreateYourWebsite } from "./components/createYourWebsite"
+import { MerryGoRound } from "./components/merryGoRound"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
 import { MyServices } from "./components/myServices"
@@ -18,11 +18,11 @@ export const App = () => {
       <ButtonProvider>
         <Global/>
         <Header/>
-        <CreateYourWebsite/>
+         <MerryGoRound/>
         <AboutMe/>
-        <MyServices/>
+       {/* <MyServices/>
         <TalkToMe/>
-        <Footer/>
+        <Footer/> */}
       </ButtonProvider>
       
     </>

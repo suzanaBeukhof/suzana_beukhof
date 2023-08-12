@@ -8,7 +8,12 @@ export const ButtonContext = createContext([]);
     const [modal, setModal] = useState('modal')
 
     function openModal() {
-        setModal('modalOpen')       
+        if (modal === 'modal'){
+            setModal('modalOpen')       
+
+        } else {
+            setModal('modal')
+        }
     }
 
     function closeModal() {

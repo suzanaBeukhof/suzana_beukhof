@@ -5,7 +5,8 @@ import {AiOutlineMenu} from "react-icons/ai"
 import{FaLinkedin} from "react-icons/fa"
 import {FaInstagramSquare} from "react-icons/fa"
 import {MdEmail} from "react-icons/md"
-import {AiOutlineCloseCircle} from "react-icons/ai"
+import logo from '../../assets/images/logo.png'
+
 import {FaGithub} from "react-icons/fa"
 
 import { ButtonContext } from '../../providers/buttonProvider'
@@ -19,28 +20,34 @@ export const Header = () => {
     return(
         <>
             <Container  >
-                <h1 >Douglas Braz</h1>
-                <AiOutlineMenu className='menuIcon' cursor="pointer" color="rgb(255, 255, 255)" size={25} onClick={openModal}/>
+                <div className='logo_titleBox'>
+                    <div className='titleBox'>
+                        <img  className='logo' src={logo} alt='logo' />
+                        <h1 className='title' >Suzana Beukhof</h1>
+                    </div>
+                    <p className='subTitle'>Práticas integrativas e complementares</p>
+                    <AiOutlineMenu className='menuIcon' cursor="pointer" color="#15243A" size={25} onClick={openModal }/>
+
+                </div>
                 <Content>
                     <div className={modal} onClick={closeModal}>
                         
 
                         <ul className='menu'>
-                        <li className="linkeIcon"><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dougbatista"><FaLinkedin size={25}/></a></li>
-                        <li className="instaIcon"><a target="_blank" rel="noreferrer" href="https://instagram.com/doug.developer?igshid=ZDc4ODBmNjlmNQ=="><FaInstagramSquare FaLinkedin size={25}/></a></li>
-                        <li className="emailIcon"><a target="_blank" rel="noreferrer" href="douglasbraz.dev@gmail.com"><MdEmail FaLinkedin size={25}/></a></li>
-                        <li className="gitIcon"><a target="_blank" rel="noreferrer" href="https://github.com/ltkbigdad"><FaGithub size={25}/></a></li>
-
-                        </ul>
-                        {/* <AiOutlineCloseCircle 
-                            color="rgb(255, 255, 255)" 
-                            size={25} 
-                            className='close' 
-                            onClick={closeModal}
-                            cursor="pointer"
-                        /> */}
+                            <li className="linkeIcon">Home</li>
+                            <li className="instaIcon">Sobre mim</li>
+                            <li className="emailIcon">O que eu trato</li>
+                            <li className="gitIcon">Contato</li>
+                        </ul>                  
                        
                     </div>
+
+                    <ul className='menuBox'>
+                        <li ><p>Home</p></li>
+                        <li >Sobre mim</li>
+                        <li >O que eu trato</li>
+                        <li >Contato</li>
+                    </ul>    
                                       
                 </Content>
             </Container>
