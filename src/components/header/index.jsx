@@ -2,12 +2,10 @@ import { useContext } from 'react'
 import { Container, Content } from "./style"
 
 import {AiOutlineMenu} from "react-icons/ai"
-import{FaLinkedin} from "react-icons/fa"
-import {FaInstagramSquare} from "react-icons/fa"
-import {MdEmail} from "react-icons/md"
+
 import logo from '../../assets/images/logo.png'
 
-import {FaGithub} from "react-icons/fa"
+
 
 import { ButtonContext } from '../../providers/buttonProvider'
 

@@ -3,7 +3,7 @@ import { AboutMe } from "./components/aboutMe"
 import { MerryGoRound } from "./components/merryGoRound"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
-import { MyServices } from "./components/myServices"
+import { MyServicesMicroteraph } from "./components/myServiceMicroteraph"
 import { TalkToMe } from "./components/talkToMe"
 
 import  ButtonProvider  from "./providers/buttonProvider"
@@ -20,8 +20,8 @@ export const App = () => {
         <Header/>
          <MerryGoRound/>
         <AboutMe/>
-       {/* <MyServices/>
-        <TalkToMe/>
+        <MyServicesMicroteraph/>
+        {/*<TalkToMe/>
         <Footer/> */}
       </ButtonProvider>
       
