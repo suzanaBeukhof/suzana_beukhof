@@ -19,9 +19,8 @@ export const Container = styled.div`
         align-items: center;
         
         background: #090808;
-        opacity: 94%;
+        opacity: 80%;
 
-        border: 1px solid red;
 
         
 
@@ -55,11 +54,11 @@ export const Container = styled.div`
         
 
         .title{
-            
+            font-size: 3rem;
         }
 
         .subTitle{
-           
+           font-size: 2rem;
 
         }
     }
