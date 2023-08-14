@@ -5,10 +5,13 @@ import { Footer } from "./components/footer"
 import { Header } from "./components/header"
 import { MyServicesMicroteraph } from "./components/myServiceMicroteraph"
 import { TalkToMe } from "./components/talkToMe"
+import { WhatIsMicrotherapy } from "./components/whatIsMicrotherapy"
+import { MyServiceBiologicalLaws } from "./components/myServiceBiologicalLaws"
 
 import  ButtonProvider  from "./providers/buttonProvider"
 
 import { Global } from "./styles/Global"
+import { WhatIsBiologicalLaws } from "./components/whatIsBiologicalLaws"
 
 
 export const App = () => {
@@ -18,9 +21,12 @@ export const App = () => {
       <ButtonProvider>
         <Global/>
         <Header/>
-         <MerryGoRound/>
+        <MerryGoRound/>
         <AboutMe/>
         <MyServicesMicroteraph/>
+        <WhatIsMicrotherapy/>
+        <MyServiceBiologicalLaws/>
+        <WhatIsBiologicalLaws/>
         {/*<TalkToMe/>
         <Footer/> */}
       </ButtonProvider>
