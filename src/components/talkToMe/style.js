@@ -1,63 +1,112 @@
 import { styled } from "styled-components";
 
-export const Container = styled.div`  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* height: 100vh; */
-    padding: 20px;
+export const Container = styled.div` 
+    margin-bottom: 30px;
+    
+   
+   background: #d1c3a9;
+   
 
 
-    background-color: rgb(20, 142, 224); 
+    .logoBox{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
 
-    .tittle{
-        font-weight: 400;
-        margin-top: 30px;
-        margin-left: 30px;
-       
+        .logo{
+            width: 10rem;
+        }
+        .title{
+            font-weight: 400;  
+            font-size: 2rem;
+            color: #15243A; 
+            background: none;
+        }
+        .subTitle{
+            background: none;
+            color: #15243A; 
+            font-size: 1rem;
+        }
+    }
+
+    .contact{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
         
+        .title{
+            font-weight: 400;  
+            font-size: 2rem;
+            color: #15243A; 
+            background: none;
+            align-self: center;
+
+            
+        }
+        .subTitle{
+            background: none;
+            color: #15243A; 
+            font-size: 0.9rem;
+            align-self: flex-start;
+            cursor: pointer;
+            
+        }
+        p{
+            background: none;
+            margin-top: 5px;
+
+        }
     }
 
-    .paragraph{
-        margin-top: 30px;
-        margin-left: 30px;
+    .siteMap{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        
+        .title{
+            font-weight: 400;  
+            font-size: 2rem;
+            color: #15243A; 
+            background: none;
+            align-self: center;
+
+            
+        }
+        .subTitle{
+            background: none;
+            color: #15243A; 
+            font-size: 0.9rem;
+            align-self: flex-start;
+            cursor: pointer;
+            
+        }
+        p{
+            background: none;
+            margin-top: 5px;
+
+        }
     }
 
-    .boxForm{
-        width: 100%;
-    }
+   
 
-    .form{
-        width: 100%;
-        margin-top: 30px;
-        height: 55rem;
-        border: none;
-    }
+    
 
     @media (min-width: 780px){
-        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-
-        .boxTxt{
-            width: 50rem;
-        }
-
-        .boxForm{
-            width: 53rem;
-        }
-
-        .form{
-            height: 50rem;
-        }
-
-        .tittle{
-            font-size: 4rem;
-        }
-
-        .paragraph{
-            font-size: 2rem;
-        }
+        width: 90%;
+        margin: 0 auto;
+        
     }
 
     

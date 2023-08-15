@@ -131,6 +131,11 @@ export const Content = styled.div`
             margin-bottom: 10px;
         }
 
+        a{
+            color: #15243A; 
+            cursor: pointer;
+        }
+
         
 
     }
@@ -158,6 +163,11 @@ export const Content = styled.div`
             li:hover{                
                 border-top: 1px solid #15243A;
                 border-bottom: 1px solid #15243A;
+            }
+
+            a{
+                color: #15243A; 
+                cursor: pointer;
             }
             
         }

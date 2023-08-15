@@ -9,10 +9,10 @@ export const AboutMe = () => {
     const {closeModal} = useContext(ButtonContext)
     return(
         <>
-            <Container onClick={closeModal}>
+            <Container onClick={closeModal} id="aboutMe">
                 <div className="titleImageBox">
                     <div className="titleBox">
-                        <h1 className="title">Quem</h1>
+                        <h1 className="title" >Quem</h1>
                         <p className="subTitle">sou eu</p>
                     </div>
                     <img src={fotopessoa} alt="foto de uma pessoa de pé"/>

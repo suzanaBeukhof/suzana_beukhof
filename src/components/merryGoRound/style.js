@@ -6,15 +6,15 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    background: #AD9466;
+   background: #d1c3a9;
+    
 
     .slider{
         margin: 0 auto;
         width: 800px;
         height: 400px;
         overflow: hidden;
-        background: #AD9466;
+        background: #d1c3a9;
         border: 1px solid red;
     }
 

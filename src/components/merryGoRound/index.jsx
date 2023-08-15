@@ -38,7 +38,7 @@ export const MerryGoRound = () => {
     // console.log(radio)
     return(
         <>
-            <Container onClick={closeModal}>    
+            <Container onClick={closeModal} id="home">    
                 <div className="slider">
                     {/* <div className="sliders">
                         <input type="radio" name="radio-btn" id="radio1"/>

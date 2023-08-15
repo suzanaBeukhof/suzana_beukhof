@@ -32,19 +32,19 @@ export const Header = () => {
                         
 
                         <ul className='menu'>
-                            <li className="linkeIcon">Home</li>
-                            <li className="instaIcon">Sobre mim</li>
-                            <li className="emailIcon">O que eu trato</li>
-                            <li className="gitIcon">Contato</li>
+                            <li><a className='subTitle' href="#home">Home</a></li>
+                            <li><a className='subTitle' href="#aboutMe">Sobre mim</a></li>
+                            <li>O que eu trato</li>
+                            <li><a className='subTitle' href="#contact">Contato</a></li>
                         </ul>                  
                        
                     </div>
 
                     <ul className='menuBox'>
-                        <li ><p>Home</p></li>
-                        <li >Sobre mim</li>
-                        <li >O que eu trato</li>
-                        <li >Contato</li>
+                        <li><a className='subTitle' href="#home">Home</a></li>
+                        <li><a className='subTitle' href="#aboutMe">Sobre mim</a></li>
+                        <li>O que eu trato</li>
+                        <li><a className='subTitle' href="#contact">Contato</a></li>
                     </ul>    
                                       
                 </Content>

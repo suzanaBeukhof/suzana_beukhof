@@ -12,6 +12,12 @@ import  ButtonProvider  from "./providers/buttonProvider"
 
 import { Global } from "./styles/Global"
 import { WhatIsBiologicalLaws } from "./components/whatIsBiologicalLaws"
+import { MyServiceFamilyConstellation } from "./components/myServiceFamilyConstellation"
+import { WhatIsFamilyConstellation } from "./components/whatIsFamilyConstellation"
+import { WhatIsFamilyConstellationcont } from "./components/whatIsFamilyConstellationcont"
+import { MyServiceRegression } from "./components/myServicRegression"
+import { WhatIsRegression } from "./components/whatIsRegression"
+import { WhatIsFamilyConstellationFolder } from "./components/whatIsFamilyConstellationFolder"
 
 
 export const App = () => {
@@ -27,8 +33,14 @@ export const App = () => {
         <WhatIsMicrotherapy/>
         <MyServiceBiologicalLaws/>
         <WhatIsBiologicalLaws/>
-        {/*<TalkToMe/>
-        <Footer/> */}
+        <MyServiceFamilyConstellation/>
+        <WhatIsFamilyConstellation/>
+        <WhatIsFamilyConstellationFolder/>
+        <WhatIsFamilyConstellationcont/>
+        <MyServiceRegression/>
+        <WhatIsRegression/>
+        <TalkToMe/>
+        {/*<Footer/> */}
       </ButtonProvider>
       
     </>
