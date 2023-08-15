@@ -1,10 +1,15 @@
 import { styled } from "styled-components";
-// import microterapia from "../../assets/images/microterapia.jpg"
+import regrecao_cover from "../../assets/images/regrecao_cover.jpg"
 
 export const Container = styled.div`
     
     width: 100%;
     margin-top: 2px;
+    background-image: url(${regrecao_cover});
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: cover;        
+    height: 100%;
 
 
    
@@ -17,7 +22,7 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
 
-        background: rgba(105,95,100,.26);
+        background: rgba(105,95,100,.46);
         
         
        

@@ -1,10 +1,19 @@
 import { styled } from "styled-components";
+import microterapia from "../../assets/images/microterapia.jpg"
 
 
 export const Container = styled.div`
     
     width: 100%;
     margin-top: 2px;
+    background-image: url(${microterapia});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+    height: 100%;
+
+
 
     .contentBox{
         width: 100%;

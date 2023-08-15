@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
-import microterapia from "../../assets/images/microterapia.jpg"
+import regrecao from "../../assets/images/regrecao.jpg"
 
 export const Container = styled.div`
     height: 30vh;
     width: 100%;
-    background-image: url(${microterapia});
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* position: relative; */
+    background-image: url(${regrecao});
+    background-position: center;
+    background-size: cover;;
+    
 
     .contentBox{
         position: absolute;

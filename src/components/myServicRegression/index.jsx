@@ -12,9 +12,9 @@ export const MyServiceRegression = () => {
             <Container onClick={closeModal}>
                 <div className="contentBox">
                     <h1 className="title">
-                        RegressãoPréePerinatal:
-                        Resgatando a SaúdeFísica e
-                        Emocional desdeoInício da Vida
+                        Regressão Pré e Perinatal:
+                        Resgatando a Saúde Física e
+                        Emocional desde o Início da Vida
                     </h1> 
                      <p className="subTitle">
                         Através da regressão pré e perinatal,

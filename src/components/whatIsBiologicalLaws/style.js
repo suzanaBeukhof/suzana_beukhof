@@ -1,10 +1,18 @@
 import { styled } from "styled-components";
+import leis_biologicas2 from "../../assets/images/leis_biologicas2.jpg"
 
 
 export const Container = styled.div`
     
     width: 100%;
     margin-top: 2px;
+
+    background-image: url(${leis_biologicas2});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;        
+    height: 100%;
 
     .contentBox{        
         width: 100%;
@@ -13,7 +21,7 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         
-        background: rgba(105,95,100,.26);
+        background: rgba(105,95,100,.66);
 
         .description{
             display: flex;

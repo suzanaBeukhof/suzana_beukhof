@@ -1,21 +1,33 @@
 import { styled } from "styled-components";
-// import microterapia from "../../assets/images/microterapia.jpg"
+import microterapia from "../../assets/images/microterapia.jpg"
 
 export const Container = styled.div`
     
     width: 100%;
     margin-top: 2px;
 
+    .bgImage{
+        background-image: url(${microterapia});
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+        height: 100%;
+    }
+
+
 
    
     
 
-    .contentBox{        
+    .contentBox{  
+        
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: none;
 
         background: rgba(105,95,100,.26);
         

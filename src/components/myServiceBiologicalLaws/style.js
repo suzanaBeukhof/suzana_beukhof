@@ -8,9 +8,9 @@ export const Container = styled.div`
 
     background-image: url(${leis_biologicas});
     background-repeat: no-repeat;
-    background-size: 100%;
-    /* position: relative; */
-
+    background-position: center;
+    background-size: cover; 
+   
     .contentBox{
         position: absolute;
         height: 30vh;

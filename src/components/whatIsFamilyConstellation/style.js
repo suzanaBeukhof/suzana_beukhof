@@ -1,10 +1,17 @@
 import { styled } from "styled-components";
+import constalacao_cover from "../../assets/images/constalacao_cover.jpg"
 
 
 export const Container = styled.div`
     
     width: 100%;
     margin-top: 2px;
+    background-image: url(${constalacao_cover});
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+        height: 100%;
 
     .contentBox{        
         width: 100%;
@@ -13,7 +20,7 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         
-        background: rgba(105,95,100,.26);
+        background: rgba(105,95,100,.56);
 
         .description{
             display: flex;
