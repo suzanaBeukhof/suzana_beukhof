@@ -9,18 +9,13 @@ export const MyServicesMicroteraph = () => {
 
     return(
         <>
-            <Container onClick={closeModal}>
+            <Container onClick={closeModal} id="microtherapy">
                 <div className="contentBox">
                      <h1 className="title">O que é Microterapia</h1> 
                      <p className="subTitle">Grandes transformações através de pequenos insights:
                      essa é a essência da microterapia.
                     </p> 
                 </div> 
-
-                
-
-                
-                
             </Container>
         </>
     )

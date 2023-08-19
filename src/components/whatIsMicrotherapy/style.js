@@ -4,7 +4,6 @@ import microterapia from "../../assets/images/microterapia.jpg"
 export const Container = styled.div`
     
     width: 100%;
-    margin-top: 2px;
 
     .bgImage{
         background-image: url(${microterapia});
@@ -14,11 +13,6 @@ export const Container = styled.div`
         background-size: cover;        
         height: 100%;
     }
-
-
-
-   
-    
 
     .contentBox{  
         
@@ -60,10 +54,7 @@ export const Container = styled.div`
         margin: 0 auto;   
         
         .contentBox{
-            width: 100%;
-             margin-top: 2px;
-             margin-bottom: 2px;
-            
+            width: 100%;            
 
             .description{
                 
@@ -91,28 +82,7 @@ export const Container = styled.div`
         
 
     }
-    
-    
-
-    
 
 `;
 
-export const Content = styled.div`
-
-     
-
-    
-    
-
-        
-    
-
-    @media (min-width: 780px){
-        width: 90%;
-    }
-   
-
-   
-`;
 

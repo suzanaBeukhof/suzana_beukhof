@@ -9,7 +9,7 @@ export const MyServiceFamilyConstellation = () => {
 
     return(
         <>
-            <Container onClick={closeModal}>
+            <Container onClick={closeModal} id="familyConstellation">
                 <div className="contentBox">
                      <h1 className="title">O que é constalação familiar</h1> 
                      <p className="subTitle">Nas constelações familiares,

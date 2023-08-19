@@ -4,7 +4,7 @@ import leis_biologicas from "../../assets/images/leis_biologicas.png"
 export const Container = styled.div`
     height: 30vh;
     width: 100%;
-    margin-top: 2px;
+    
 
     background-image: url(${leis_biologicas});
     background-repeat: no-repeat;

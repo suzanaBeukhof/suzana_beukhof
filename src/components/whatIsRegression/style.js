@@ -4,16 +4,11 @@ import regrecao_cover from "../../assets/images/regrecao_cover.jpg"
 export const Container = styled.div`
     
     width: 100%;
-    margin-top: 2px;
     background-image: url(${regrecao_cover});
     background-repeat: no-repeat;
     background-position: center;   
     background-size: cover;        
     height: 100%;
-
-
-   
-    
 
     .contentBox{        
         width: 100%;
@@ -23,10 +18,6 @@ export const Container = styled.div`
         align-items: center;
 
         background: rgba(105,95,100,.46);
-        
-        
-       
-       
 
         .description{
             display: flex;
@@ -54,9 +45,6 @@ export const Container = styled.div`
         
         .contentBox{
             width: 100%;
-             margin-top: 2px;
-             margin-bottom: 2px;
-            
 
             .description{
                 
@@ -74,38 +62,10 @@ export const Container = styled.div`
             .descriptionP{
                 font-size: 1.3rem;
             }
-
-
-        
-
        
-        }
+        }        
 
-        
+    }       
 
-    }
-    
-    
-
-    
-
-`;
-
-export const Content = styled.div`
-
-     
-
-    
-    
-
-        
-    
-
-    @media (min-width: 780px){
-        width: 90%;
-    }
-   
-
-   
 `;
 

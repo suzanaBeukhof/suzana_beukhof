@@ -7,9 +7,11 @@ export const Container = styled.div`
    align-items: flex-start;   
    background-color: #ffffff;
    
+   
 
     .titleImageBox{
         display: flex;
+
         justify-content: space-between;
         width: 100%;
         margin-top: 10px;
@@ -54,11 +56,24 @@ export const Container = styled.div`
     @media (min-width: 780px){
         width: 90%;
          margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        
 
         .titleImageBox{
+            width: 50%;
+            
+            flex-direction: column;
+            justify-content: space-around;
+
+          
             .titleBox{
+                margin-top: 0px;
                 .title{
-                    font-size: 3rem;                    
+                    font-size: 3rem; 
+                    width:  25rem;
                 }
                 .subTitle{
                     font-size: 2.5rem;
@@ -67,17 +82,32 @@ export const Container = styled.div`
           
 
             img{
-                width: 18rem;                    
+                width: 25rem;
                 
             }
         }
 
         .description{
-        font-size: 1.5rem;
-        width: 100%;
-        margin: 0 auto;
-
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;            
+            width: 40%;
+           
+            margin: 0 auto;
+        }
     }
+
+    @media (min-width: 1118px){
+
+        .titleImageBox{
+            width: 28%;
+        }
+        
+        .description{            
+            font-size: 1.5rem;  
+            width: 50%;            
+        }
+        
     }
 
 `;

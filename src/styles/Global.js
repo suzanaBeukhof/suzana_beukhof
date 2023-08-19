@@ -8,7 +8,7 @@ export const Global = createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         font-family: 'Arvo', serif; 
-        background-color: #ffffff;
+        
     }
 
     

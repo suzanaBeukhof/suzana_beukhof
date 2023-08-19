@@ -9,7 +9,7 @@ export const MyServiceBiologicalLaws = () => {
 
     return(
         <>
-            <Container onClick={closeModal}>
+            <Container onClick={closeModal} id="biologicalLaws">
                 <div className="contentBox">
                     <h1 className="title">O que é leis biológicas</h1> 
                     <p className="subTitle">As leis biológicas revelam a

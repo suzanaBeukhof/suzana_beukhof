@@ -7,7 +7,7 @@ export const Container = styled.div`
     background-image: url(${microterapia});
     background-repeat: no-repeat;
     background-size: 100%;
-    /* position: relative; */
+    
 
     .contentBox{
         position: absolute;
@@ -69,21 +69,4 @@ export const Container = styled.div`
 
 `;
 
-export const Content = styled.div`
-
-     
-
-    
-    
-
-        
-    
-
-    @media (min-width: 780px){
-        width: 90%;
-    }
-   
-
-   
-`;
 

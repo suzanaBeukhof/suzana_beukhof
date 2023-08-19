@@ -5,7 +5,6 @@ import constalacao_cover from "../../assets/images/constalacao_cover.jpg"
 export const Container = styled.div`
     
     width: 100%;
-    margin-top: 2px;
     background-image: url(${constalacao_cover});
     background-repeat: no-repeat;
     background-position: center;
@@ -56,24 +55,10 @@ export const Container = styled.div`
         
         .contentBox{
             width: 100%;
-             margin-top: 2px;
-             margin-bottom: 2px;
             
-
-            .description{
-                
-            }
-
-            
-
             .descriptionP{
                 font-size: 1.3rem;
             }
-
-
-        
-
-       
         }
 
         
@@ -86,21 +71,4 @@ export const Container = styled.div`
 
 `;
 
-export const Content = styled.div`
-
-     
-
-    
-    
-
-        
-    
-
-    @media (min-width: 780px){
-        width: 90%;
-    }
-   
-
-   
-`;
 

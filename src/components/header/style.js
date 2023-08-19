@@ -71,10 +71,10 @@ export const Container = styled.div`
             .subTitle{          
                 font-size: 2rem;
                 :hover{
-            border-top: 1px solid #15243A;
-            border-bottom: 1px solid #15243A;
+                    border-top: 1px solid #15243A;
+                    border-bottom: 1px solid #15243A;
 
-            }
+                }
             }
         }
 
@@ -129,6 +129,10 @@ export const Content = styled.div`
         li{
             margin-top: 10px;
             margin-bottom: 10px;
+
+            .icon{
+                color: red;
+            }
         }
 
         a{
@@ -136,9 +140,47 @@ export const Content = styled.div`
             cursor: pointer;
         }
 
-        
+        .treatmentsBoxMobile{
+            display: none;
+        }
 
+        .treatmentsBoxMobileOpen{
+            
+            width: 13rem;
+            margin-left: 113px;
+            margin-top: 81px;
+            position: absolute;
+            /* background-color: rgba(255, 255, 255, .99); */
+            z-index: 10;
+            li{
+                font-size: 1rem;
+                color: #15243A;
+                font-family: 'Arvo', serif; 
+                cursor: pointer;
+            }
+
+            li:hover{                
+                border-top: 1px solid #15243A;
+                border-bottom: 1px solid #15243A;
+            }
+
+            li{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            a{
+                color: #15243A; 
+                cursor: pointer;
+            }
+        }
     }
+
+    .treatmentsBox{
+        display: none;
+    }
+
+    
 
     .menuBox{
         display: none;
@@ -147,6 +189,13 @@ export const Content = styled.div`
     @media (min-width: 780px){
         width: 100%;
         margin: 0 auto;
+
+        .modalOpen{
+            display: none;
+        }
+        .treatmentsBoxMobileOpen{
+            display: none;
+        }
         
         .menuBox{
             display: flex;
@@ -170,6 +219,35 @@ export const Content = styled.div`
                 cursor: pointer;
             }
             
+        }
+
+        .treatmentsBoxOpen{
+        
+            width: 13rem;
+            position: absolute;
+            /* background-color: rgba(255, 255, 255, .99); */
+            z-index: 10;
+            li{
+                font-size: 1rem;
+                color: #15243A;
+                font-family: 'Arvo', serif; 
+                cursor: pointer;
+            }
+
+            li:hover{                
+                border-top: 1px solid #15243A;
+                border-bottom: 1px solid #15243A;
+            }
+
+            li{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            a{
+                color: #15243A; 
+                cursor: pointer;
+            }
         }
 
 

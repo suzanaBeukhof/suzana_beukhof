@@ -4,8 +4,7 @@ import leis_biologicas2 from "../../assets/images/leis_biologicas2.jpg"
 
 export const Container = styled.div`
     
-    width: 100%;
-    margin-top: 2px;
+    width: 100%;    
 
     background-image: url(${leis_biologicas2});
     background-repeat: no-repeat;
@@ -49,51 +48,15 @@ export const Container = styled.div`
         
         .contentBox{
             width: 100%;
-             margin-top: 2px;
-             margin-bottom: 2px;
-            
-
-            .description{
-                
-            }
-
-            
 
             .descriptionP{
                 font-size: 1.3rem;
             }
-
-
-        
-
-       
         }
 
-        
-
     }
-    
-    
-
-    
 
 `;
 
-export const Content = styled.div`
 
-     
-
-    
-    
-
-        
-    
-
-    @media (min-width: 780px){
-        width: 90%;
-    }
-   
-
-   
-`;
 

@@ -18,19 +18,23 @@ export const AboutMe = () => {
                     <img src={fotopessoa} alt="foto de uma pessoa de pé"/>
                 </div>
 
-                <p className="description">
-                    Sou Suzana Beukhof, graduada em Fisioterapia, 
-                    e estou animada em compartilhar minha jornada de aprendizado com você. 
-                    Minhas formações abrangem desde Microfisioterapia e TFT para liberar emoções, 
-                    até Soul Plan Reading para explorar a espiritualidade nas trajetórias de vida. 
-                    Com conhecimentos em Leis Biológicas e Constelação Familiar, compreendo a ligação mente-corpo.
-                    Além disso, explorei Hipnose, Psicogenealogia e Thetahealing para ajudar outros na cura emocional. 
-                    Minhas habilidades em Cura de Feridas Pré e Perinatais, 
-                    Auriculoacupuntura e Apometria Terapêutica complementam meu arsenal terapêutico, 
-                    junto com a abordagem transpessoal do Reiki. Juntos, 
-                    vamos explorar maneiras de alcançar plenitude e transformação. 
-                    Vamos começar essa jornada!
-                </p>
+                <div className="description">
+                    <p className="descriptionText">
+                        Sou Suzana Beukhof, graduada em fisioterapia, 
+                        e estou animada em compartilhar minha jornada de aprendizado com você. 
+                        Minhas formações abrangem desde microfisioterapia e TFT para liberar emoções, 
+                        até soul plan Reading para explorar a espiritualidade nas trajetórias de vida. 
+                        com conhecimentos em leis biológicas e constelação Familiar, compreendo a ligação mente-corpo.
+                        Além disso, explorei Hipnose, Psicogenealogia e Thetahealing para ajudar outros na cura emocional. 
+                        Minhas habilidades em Cura de feridas pré e perinatais, 
+                        auriculoacupuntura e apometria terapêutica complementam meu arsenal terapêutico, 
+                        junto com a abordagem transpessoal do reiki. Juntos, 
+                        vamos explorar maneiras de alcançar plenitude e transformação. 
+                        Vamos começar essa jornada!
+                    </p>
+
+                </div>
+
            
 
             </Container>

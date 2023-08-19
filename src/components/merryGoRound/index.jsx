@@ -1,92 +1,88 @@
-import { useContext, useState } from "react"
-import { Container,  } from "./style"
+import { useContext } from "react"
+import { Container  } from "./style"
 import { ButtonContext } from "../../providers/buttonProvider"
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
+
 import microterapia from "../../assets/images/microterapia.jpg"
+import leis_biologicas2 from "../../assets/images/leis_biologicas2.jpg"
+import constalacao_cover from "../../assets/images/constalacao_cover.jpg"
+import regrecao_cover from "../../assets/images/regrecao_cover.jpg"
+
+
+
+
+
 
 
 
 export const MerryGoRound = () => {
     const {closeModal} = useContext(ButtonContext)
-    // const [count, setCount] = useState(1)
-    // const [radio, setRadio] = useState("radio1")
 
-    // setInterval(function(){
-    //     // nextImage()
-    //     // selectImage()
-    // }, 2000)
+  const data = [
+    {id: '1', 
+    title: 'Microterapia', 
+    paragraph: 'Grandes transformações através de pequenos inights: essa é a essência da microterapia.', 
+    image: microterapia },
+    {id: '2', title: 'Leis Biológicas', 
+    paragraph: 'As leis biológicas revelam a sabedoria oculta por trás dos processos vitais, conectando-nos profundamente com a natureza que nos molda.', 
+    image: leis_biologicas2},
+    {id: '3', title: 'Constalação Familiar', 
+    paragraph: 'Nas constelações familiares, olhamos para além das aparências, desvendando os laços invisíveis que moldam nosso destino.', 
+    image: constalacao_cover},
+    {id: '4', title: 'Regreção Pré e Perimatal', 
+    paragraph: 'Através da regressão pré e perinatal, exploramos as raízes da saúde física e emocional, desvendando a história vital desde seus primeiros momentos.', 
+    image: regrecao_cover},
+    
+  ]
 
-    // function nextImage(){
-    //     setCount(count + 1)
-    //     if(count > 4){
-    //         setCount(1)
-    //     }
-        
-    // }
 
-    // function selectImage() {
-    //     if(count === 1){
-    //         setRadio("radio1")
-    //     } else if (count === 2){
-    //         setRadio("radio2")
-    //         } else if (count === 3){
-    //             setRadio("radio3")
-    //             } else if (count === 4){
-    //                 setRadio("radio4")
-    //                 }
-    // }
-
-    // console.log(radio)
     return(
         <>
-            <Container onClick={closeModal} id="home">    
-                <div className="slider">
-                    {/* <div className="sliders">
-                        <input type="radio" name="radio-btn" id="radio1"/>
-                        <input type="radio" name="radio-btn" id="radio2"/>
-                        <input type="radio" name="radio-btn" id="radio3"/>
-                        <input type="radio" name="radio-btn" id="radio4"/>
+            <Container onClick={closeModal} id="home">     
+                <Swiper
+                    
+                    spaceBetween={10}
+                    // pagination={{clickable: true}}
+                    navigation={true}
+                    loop={true}
+                    modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                      }}
 
-                        <div className="slide first">
-                            <img src={microterapia} alt="image 1"/>
-                            <h1 className="title">Microterapia</h1>
-                            <p className="subTitle"></p>
-                        </div>
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                      rotate: 50,
+                      stretch: 0,
+                      depth: 100,
+                      modifier: 1,
+                      slideShadows: true,
+                    }}
+                    className="sliderContainer"
+                >
 
-                        <div className="slide">
-                            <img src={microterapia} alt="image 2"/>
-                            <h1 className="title">Microterapia 2</h1>
-                            <p className="subTitle">“Grandes transformações através de pequenos insights: essa é a essência da micriterapia.”</p>
-                        </div>
+                    {data.map((item) => (
+                        <SwiperSlide key={item.id} className="sliderContent">
+                            <div className="card">
+                                <img src={item.image} alt="slider"/>
+                                <div className="description">
+                                    <p className="title">{item.title}</p>
+                                    <p className="paragraph">{item.paragraph}</p>
 
-                        <div className="slide">
-                            <img src={microterapia} alt="image 3"/>
-                            <h1 className="title">Microterapia 3</h1>
-                            <p className="subTitle">“Grandes transformações através de pequenos insights: essa é a essência da micriterapia.”</p>
-                        </div>
+                                </div>
+                            </div>
 
-                        <div className="slide">
-                            <img src={microterapia} alt="image 4"/>
-                            <h1 className="title">Microterapia 4</h1>
-                            <p className="subTitle">“Grandes transformações através de pequenos insights: essa é a essência da micriterapia.”</p>
-                        </div>
+                        </SwiperSlide>
 
-                        <div className="navigation-auto">
-                            <div className="auto-btn1"></div>
-                            <div className="auto-btn2"></div>
-                            <div className="auto-btn3"></div>
-                            <div className="auto-btn4"></div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="manual-navigation">
-                        <label htmlFor="radio1" className="manual-btn"></label>
-                        <label htmlFor="radio2" className="manual-btn"></label>
-                        <label htmlFor="radio3" className="manual-btn"></label>
-                        <label htmlFor="radio4" className="manual-btn"></label>
-                    </div> */}
-                </div>            
+                    ))}
+                    
+                </Swiper>  
                 
             </Container>
            
