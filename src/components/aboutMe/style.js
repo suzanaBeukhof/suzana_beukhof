@@ -11,6 +11,7 @@ export const Container = styled.div`
 
     .titleImageBox{
         display: flex;
+        flex-direction: column;
 
         justify-content: space-between;
         width: 100%;
