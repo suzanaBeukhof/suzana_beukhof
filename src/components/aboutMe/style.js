@@ -14,15 +14,16 @@ export const Container = styled.div`
 
         justify-content: space-between;
         width: 100%;
-        margin-top: 10px;
+       
 
         img{
-            width: 30%;
+            margin-top: 20px;
+            width: 50%;
+            align-self: center;
         }
 
         .titleBox{
-            margin-top: 8%;
-           
+                     
 
             .title{
                 font-size: 2rem;
