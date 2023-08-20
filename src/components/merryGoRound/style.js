@@ -36,11 +36,12 @@ export const Container = styled.div`
     .card{
         width: 100%;
         height: 100%;
+        background: #ffffff;
 
         img{
             width: 100%;
             height: 100%;
-            opacity: 40%;
+            opacity: 30%;
         }
 
         .description{
