@@ -4,125 +4,79 @@ export const Container = styled.div`
    
 
     .contentBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 10px;
+        .tittle{
+            font-size: 1.5rem;
+            text-align: center;
+            
+
+
+        }
+        .tittleSpan{
+            color: #145369;
+        }
         
         
-        .supBox{
-            
-            background: #004aad;
-           
-        }
+        .cardsBox{
 
-        .firstBox{
-            padding: 10px;
-            
-            .paragraph{
-                text-align: center;
-                color: #ffffff;
-            }    
-        }
-
-        .secondBox{
-            .numberBox{
+            .card{
                 display: flex;
                 align-items: center;
-                justify-content: center;                
+                justify-content: center;
+                flex-direction: column;
 
-                width: 40%;
-                height: 3rem;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
-                background: #ffffff;
-                .number{
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    color: #15243A;
-                    opacity: 80%;
-                }
-            }
-
-            .textBox{
+                margin-top: 5px;
+                margin-bottom: 5px;
                 padding: 10px;
-                .paragraph{
-                    text-align: center;
-                    color: #ffffff;
-                }  
-            }
-        }
+                border-radius: 10px;
 
-        .thirdBox{
-            display: flex;
-            flex-direction: column;           
-            align-items: flex-end;
-            .numberBox{
-                display: flex;
-                align-items: center;
-                justify-content: center;                
+                cursor: pointer;
 
-                width: 40%;
-                height: 3rem;
-                border-top-left-radius: 50px;
-                border-bottom-left-radius: 50px;
-                background: #ffffff;
-                .number{
-                    font-size: 2rem;
-                    font-weight: bolder;
-                    color: #15243A;
-                    opacity: 80%;
-                }
-            }
 
-            .textBox{
-                padding: 10px;
-                
-                .paragraph{
-                    text-align: center;
-                    color: #ffffff;
-                }  
-            }
-        }
+                border: 1px solid;
 
-       
-
-        .infBox{
-            margin-top: 20px;
-
-            .fourthBox{
-                .numberBox{
+                .tittleBox{
                     display: flex;
+                    justify-content: space-around;
                     align-items: center;
-                    justify-content: center;                
 
-                    width: 40%;
-                    height: 3rem;
-                    border-top-right-radius: 50px;
-                    border-bottom-right-radius: 50px;
-                    background: #004aad;
-                    .number{
-                        font-size: 2rem;
+                    width: 100%;
+                    height: 80px;
+
+                    border: 1px solid blue;
+                    .paragraphTittle{
+                        width: 70%;
+                        font-size: 1rem;
                         font-weight: bolder;
-                        color: #ffffff;                        
+                    }
+                    .numberBox{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        border-radius: 30px;
+                        width: 45px;
+                        height: 45px;
+                        background: #145369;
+                        .numberTittle{
+                            font-size: 1.2rem;
+                            font-weight: bolder;
+                            color: #ffffff;
+                        }
                     }
                 }
-            }
-
-            .textBox{
-                padding: 10px;
-                .paragraph{
-                    text-align: center;
-                    color: #15243A;
-                }  
+                .description{}
             }
         }
 
-        .fifthBox{
-            padding: 10px;
-                .paragraph{
-                    text-align: center;
-                    color: #15243A;
-                } 
-        }
+        
 
-    }
+    }   
 
     
 
@@ -132,93 +86,47 @@ export const Container = styled.div`
         
         
         .contentBox{
-            .firstBox{  
-                margin-bottom: 20px;          
-                
-                .paragraph{
-                    font-size: 1.3rem;
-                }    
-            }
-
-            .secondBox{
-                display: flex;
-                margin-bottom: 20px;
-                .numberBox{
-                    width: 555px;
-                    height: 8rem;
-                   
-                    .number{
-                        font-size: 5rem;
-                    }
-                }
-
-                .textBox{
-                   
-                    .paragraph{
-                        font-size: 1.3rem;
-                    }  
-                }
-            }
-
-            .thirdBox{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row-reverse;
-                height: 10rem;
-                margin-bottom: 20px;
-
-                .numberBox{
-                    width: 555px;
-                    height: 8rem;
-                   
-                    .number{
-                        font-size: 5rem;
-                    }
-                }
-
-                .textBox{
-                   
-                    .paragraph{
-                        font-size: 1.3rem;
-                    }  
-                }
-            }
-
-        
-
-            .infBox{
+            
+            .tittle{
                
+            }
+            .tittleSpan{
+               
+            }
+            
+            
+            .cardsBox{
 
-                .fourthBox{
-                    display: flex;
-                    .numberBox{
-                        width: 555px;
+                .card{
+                    width: 45rem;
+
+
+                    .tittleBox{
                         height: 8rem;
-                    
-                        .number{
-                            font-size: 5rem;
+                       
+                        .paragraphTittle{
+                            font-size: 1.3rem;
+                        }
+                        .numberBox{
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 50%;
+                           
+                            .numberTittle{
+                                font-size: 1.5rem;
+                               
+                            }
                         }
                     }
+                    .description{
+                        width: 50%;
+                        font-size: 1.3rem;
+                        align-self: flex-start;
 
-                    .textBox{
-                    
-                        .paragraph{
-                            font-size: 1.3rem;
-                        }  
                     }
                 }
-            }    
-
-            .fifthBox{
-                margin-top: 2rem;
-                margin-bottom: 20px;
-                .paragraph{
-                    font-size: 1.3rem;   
-                } 
             }
-
-        }
+        }   
     }
 
 `;

@@ -8,81 +8,103 @@ import { ButtonContext } from "../../providers/buttonProvider"
 export const WhatIsFamilyConstellationFolder = () => {
     const {closeModal} = useContext(ButtonContext)
 
+    // const cards = [
+    //     {
+    //         "tittle": "ABANDONO, CARÊNCIA",
+    //         "number": "1",
+    //         "description": "De onde vem essa sensação de estar abandonado, rejeitado, deixado de lado ou sozinho",
+    //     },
+    //     {
+    //         "tittle": "MEDOS E TRISTEZAS",
+    //         "number": "2",
+    //         "description": "Medo de ser excluído, medo de perder o seu lugar, medo de ficar só e com o tempo se sentir cada vez mais triste.",
+    //     }
+    // ]
+
     return(
         <>
             <Container onClick={closeModal}>
                 <div className="contentBox">
-                    <div className="supBox">
-                        <div className="firstBox">
-                            <p className="paragraph">
-                                As três leis sistêmicas são os princípios fundamentais que
-                                orientam a abordagem terapêutica da constelação
-                                familiar e que ajudam a compreender as dinâmicas que
-                                existem nas relações familiares e pessoais. São elas:
-                            </p>
-                        </div>
-                        <div className="secondBox">
-                            <div className="numberBox">
-                                <p className="number">01</p>
+                    <h1 className="tittle">O QUÊ <span className="tittleSpan">VOCÊ ENCONTRARÁ NESSE CONTEÚDO?</span></h1>
+                    <div className="cardsBox">
+                       
+                        <div className="card" key={1}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">ABANDONO, CARÊNCIA</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">1</p>
+                                </div>
                             </div>
-                            <div className="textBox">
-                                <p className="paragraph">Lei do Pertencimento: Todos os membros de
-                                    um sistema familiar têm o direito de pertencer e
-                                    devem ser incluídos com respeito e dignidade,
-                                    independentemente de sua história,
-                                    comportamento ou papel na família
-                                </p>
-                            </div>
-                        </div>
-                        <div className="thirdBox"> 
-                            <div className="numberBox">
-                                <p className="number">02</p>
-                            </div>                           
-                            <div className="textBox">
-                                <p className="paragraph">Lei da Ordem: Cada membro da família tem
-                                    um lugar e uma ordem dentro do sistema, e
-                                    é importante que essa ordem seja
-                                    respeitada. Quando essa ordem é
-                                    perturbada ou desrespeitada, pode haver
-                                    conflitos, desequilíbrios e problemas
-                                    emocionais.
-                                </p>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div className="infBox">
-                        <div className="fourthBox">
-                            <div className="numberBox">
-                                <p className="number">03</p>
-                            </div>
-                            <div className="textBox">
-                                <p className="paragraph">
-                                Lei do Equilíbrio: Todo sistema busca o
-                                equilíbrio e a harmonia, e para isso é
-                                necessário que haja um equilíbrio entre dar
-                                e receber. Quando esse equilíbrio é
-                                perturbado, podem surgir problemas
-                                emocionais e relacionais, como
-                                sentimentos de culpa, raiva, ressentimento,
-                                etc.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="fifthBox">
-                            <p className="paragraph">
-                                Ao entender e respeitar essas leis, é possível melhorar a
-                                comunicação, o relacionamento e o bem-estar emocional
-                                de todos os membros do sistema familiar.
-                                Embora a constelação familiar seja frequentemente
-                                utilizada para tratar questões familiares e pessoais, ela
-                                também pode ser aplicada em empresas e organizações
-                                para melhorar as dinâmicas de equipe e aumentar a
-                                eficiência do trabalho em grupo.
+                            <p className="description">
+                            De onde vem essa sensação de estar abandonado, rejeitado, deixado de lado ou sozinho.
                             </p>
                         </div>
 
+                        <div className="card" key={2}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">MEDOS E TRISTEZAS</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">2</p>
+                                </div>
+                            </div>
+                            <p className="description">
+                            Medo de ser excluído, medo de perder o seu lugar, medo de ficar só e com o tempo se sentir cada vez mais triste.
+                            </p>
+                        </div>
+
+                        <div className="card" key={3}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">DESVALORIZADO E IMPOTENTE</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">3</p>
+                                </div>
+                            </div>
+                            <p className="description">
+                            Seus relacionamentos não são recíprocos, você acha não ser capaz de determinadas coisas ou situações.
+                            </p>
+                        </div>
+
+                        <div className="card" key={4}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">PERDIDO, PARALISADO E COM SENSO DE URGÊNCIA</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">4</p>
+                                </div>
+                            </div>
+                            <p className="description">
+                            Não sabe o que fazer ou para onde ir, fica ansiosa para encontrar a direção.
+                            </p>
+                        </div>
+
+                        <div className="card" key={5}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">CANSADO, ESGOTADO, PROCRASTINANDO, TENSO E DORES NO CORPO</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">5</p>
+                                </div>
+                            </div>
+                            <p className="description">
+                            Vontade de só ficar no sofá ou dormindo, não estando presente no aqui e agora.
+                            </p>
+                        </div>
+
+                        <div className="card" key={6}>
+                            <div className="tittleBox">
+                                <p className="paragraphTittle">RAIVA, RESSENTIMENTO E REMORSO</p>
+                                <div className="numberBox">
+                                    <p className="numberTittle">6</p>
+                                </div>
+                            </div>
+                            <p className="description">
+                            Esses sentimentos em relação ao outro ou com você mesmo.
+                            </p>
+                        </div>
+                        
+
+
+                      
                     </div>
+                 
                 </div> 
             </Container>
         </>
